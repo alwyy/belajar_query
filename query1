@@ -1,0 +1,40 @@
+MariaDB [(none)]> use polmed_kuliah_reservasi_hotel
+Database changed
+MariaDB [polmed_kuliah_reservasi_hotel]> show tables;
++-----------------------------------------+
+| Tables_in_polmed_kuliah_reservasi_hotel |
++-----------------------------------------+
+| tb_kamar                                |
+| tb_pelanggan                            |
+| tb_reservasi_hotel                      |
++-----------------------------------------+
+3 rows in set (0.004 sec)
+
+MariaDB [polmed_kuliah_reservasi_hotel]> SELECT
+    -> *
+    -> FROM
+    -> tb_kamar
+    -> WHERE
+    -> kapasitas = 2;
++----------+-------------+-----------+-----------------+
+| kamar_id | jenis_kamar | kapasitas | harga_per_malam |
++----------+-------------+-----------+-----------------+
+|        1 | Deluxe      |         2 |          750000 |
+|        2 | Superior    |         2 |          500000 |
+|        4 | Standard    |         2 |          300000 |
+|        5 | Deluxe      |         2 |          750000 |
+|        6 | Superior    |         2 |          500000 |
+|        8 | Standard    |         2 |          300000 |
+|        9 | Deluxe      |         2 |          750000 |
+|       10 | Superior    |         2 |          500000 |
+|       12 | Standard    |         2 |          300000 |
+|       13 | Deluxe      |         2 |          750000 |
+|       14 | Superior    |         2 |          500000 |
+|       16 | Standard    |         2 |          300000 |
+|       17 | Deluxe      |         2 |          750000 |
+|       18 | Superior    |         2 |          500000 |
+|       20 | Standard    |         2 |          300000 |
++----------+-------------+-----------+-----------------+
+15 rows in set (0.173 sec)
+
+MariaDB [polmed_kuliah_reservasi_hotel]>
